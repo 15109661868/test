@@ -1,0 +1,3 @@
+﻿  test.4.1.c
+H:\code-practice\test.4.1\test.4.1\test.4.1.c(197,14): error C2059: 语法错误:“数字上的错误后缀”
+H:\code-practice\test.4.1\test.4.1\test.4.1.c(198,9): error C2143: 语法错误: 缺少“:”(在“case”的前面)

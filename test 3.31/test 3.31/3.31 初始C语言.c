@@ -53,14 +53,38 @@
 //    printf("%d", c);
 //    return 0;
 //}
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int n = 0;
+//    while ((scanf("%d", &n)) != EOF)
+//    {
+//        printf("%d\n", 1 << n);
+//    }
+//    return 0;
+//}
 #include <stdio.h>
 
+//int main()
+//{
+//    int age = 0;
+//    scanf("%d", &age);
+//    if (age < 18)
+//    {
+//        printf("未成年\n");
+//    }
+//}
 int main()
 {
-    int n = 0;
-    while ((scanf("%d", &n)) != EOF)
+    int age = 0;
+    scanf("%d", &age);
+    if (age < 18)
     {
-        printf("%d\n", 1 << n);
+        printf("未成年\n");
     }
-    return 0;
+    else
+    {
+        printf("成年\n");
+    }
 }
