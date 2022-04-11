@@ -415,17 +415,57 @@
 //
 //    return 0;
 //}
+//#include <stdio.h>
+//int main()
+//{
+//    int i = 10;
+//
+//    do
+//    {
+//        if (5 == i)
+//            continue;
+//        printf("%d\n", i);
+//    } while (i < 10);
+//
+//    return 0;
+//}
+
+//int main()
+//{
+//	float a;
+//	scanf("%f", &a);
+//	printf("%d", a%10);
+//
+//	return 0;
+//}*/
+//int multiply(int a, int b)
+//{
+//	return a, b;
+//}
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int n = 0;
+//    while ((scanf("%d", &n)) != EOF)
+//    {
+//        printf("%d\n", 1<< n);
+//    }
+//    return 0;
+//}
 #include <stdio.h>
 int main()
 {
-    int i = 10;
-
-    do
+    char ch;
+    scanf("%c", &ch);
+    for (ch = 0; ch <= 5; ch++)
     {
-        if (5 == i)
-            continue;
-        printf("%d\n", i);
-    } while (i < 10);
-
+        int a;
+        printf("%c", ch);
+        for (a = 0; a = ch; a++)
+        {
+            printf("%c", a);
+        }
+    }
     return 0;
 }
