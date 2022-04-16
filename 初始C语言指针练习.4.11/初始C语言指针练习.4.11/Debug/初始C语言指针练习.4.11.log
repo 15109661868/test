@@ -1,0 +1,3 @@
+﻿  4.11.c
+H:\code-practice\初始C语言指针练习.4.11\初始C语言指针练习.4.11\4.11.c(71,1): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  初始C语言指针练习.4.11.vcxproj -> H:\code-practice\初始C语言指针练习.4.11\Debug\初始C语言指针练习.4.11.exe
