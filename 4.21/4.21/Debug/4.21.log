@@ -1,2 +1,3 @@
 ﻿  牛客网练习.4.21.c
-  4.21.vcxproj -> H:\code-practice\4.21\Debug\4.21.exe
+MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 _main，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
+H:\code-practice\4.21\Debug\4.21.exe : fatal error LNK1120: 1 个无法解析的外部命令

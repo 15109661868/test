@@ -25,36 +25,71 @@
 //	printf("%d", r);
 //		return 0;
 //}
-#include <stdio.h>
-
-int main()
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int k = 7;
+//	
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int left = 0;
+//	int right = sz-1;	
+//	while (left <= right)
+//	{
+//		int mi = (left + right) / 2;
+//		if (arr[mi] < k)
+//		{
+//			left = mi + 1;
+//		}
+//		else if (arr[mi] > k)
+//		{
+//			right = mi - 1;
+//		}
+//		else
+//		{
+//			printf("找到了,下标是:%d\n", mi);
+//			break;
+//		}
+//	}
+//	if (left > right)
+//	{
+//		printf("找不到\n");
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int k = 5;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int left = 0;
+//	int right = sz - 1;
+//	while (left <= right)
+//	{
+//		int mi = (left + right) / 2;
+//		if (mi < k)
+//		{
+//			left = mi + 1;
+//		}
+//		else if (mi > k)
+//		{
+//			right = mi - 1;
+//		}
+//		else
+//		{
+//			printf("找到了,下标是%d\n", arr[mi]);
+//			break;
+//		}
+//	}
+//	return 0;
+//}
+int Fun(int n)
 {
-	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
-	int k = 7;
-	
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	int left = 0;
-	int right = sz-1;	
-	while (left <= right)
-	{
-		int mi = (left + right) / 2;
-		if (arr[mi] < k)
-		{
-			left = mi + 1;
-		}
-		else if (arr[mi] > k)
-		{
-			right = mi - 1;
-		}
-		else
-		{
-			printf("找到了,下标是:%d\n", mi);
-			break;
-		}
-	}
-	if (left > right)
-	{
-		printf("找不到\n");
-	}
-	return 0;
+    if (n == 5)
+        return 2;
+    else
+        return 2 * Fun(n + 1);
 }

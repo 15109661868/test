@@ -1,0 +1,4 @@
+﻿  4.22.c
+H:\code-practice\4.22\4.22\4.22.c(94,8): warning C4013: “system”未定义；假设外部返回 int
+H:\code-practice\4.22\4.22\4.22.c(98,12): warning C4013: “strcmp”未定义；假设外部返回 int
+  4.22.vcxproj -> H:\code-practice\4.22\Debug\4.22.exe
