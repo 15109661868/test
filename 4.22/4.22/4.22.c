@@ -121,26 +121,39 @@
 //	printf("%d %d\n", a, b);
 //	return 0;
 //}
+//#include <stdio.h>
+//
+//again(int x)
+//{
+//	int i = 0;
+//	int j = 1;
+//	for (i = 1; i <= x; i++)
+//	{
+//		for (j = 1; j <= i; j++)
+//		{
+//			printf("%d*%d=%d ", j, i, j * i);
+//		}
+//		printf("\n");
+//	}
+//}
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	again(a);
+//	printf("%d", a);
+//	return 0;
+//}
 #include <stdio.h>
-
-again(int x)
+int main() 
 {
-	int i = 0;
-	int j = 1;
-	for (i = 1; i <= x; i++)
-	{
-		for (j = 1; j <= i; j++)
-		{
-			printf("%d*%d=%d ", j, i, j * i);
-		}
-		printf("\n");
-	}
-}
-int main()
-{
-	int a = 0;
-	scanf("%d", &a);
-	again(a);
-	printf("%d", a);
-	return 0;
+    int a = 0;
+   
+    int b = 0;
+    int c = 0;
+    
+    scanf("%d%d", &a, &b);
+    c = (b - a) + b;
+    printf("%d", c);
+    return 0;
 }
