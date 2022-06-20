@@ -8,7 +8,7 @@ void InitBoard(char board[MOC][NOC], int mc, int nc)
 	{
 		for (j = 0; j < nc; j++)
 		{
-			board[i][j]=' ';
+			board[i][j] = ' ';
 		}
 	}
 }
@@ -21,11 +21,11 @@ void Displayboard(char board[MOC][NOC], int mc, int nc)
 		for (j = 0; j < nc; j++)
 		{
 			printf(" %c ", board[i][j]);
-			if (j < nc-1)
+			if (j < nc - 1)
 				printf("|");
 		}
 		printf("\n");
-		if (i < mc-1)
+		if (i < mc - 1)
 		{
 			int j = 0;
 			for (j = 0; j < mc; j++)
@@ -34,13 +34,13 @@ void Displayboard(char board[MOC][NOC], int mc, int nc)
 				if (j < nc - 1)
 					printf("|");
 			}
-				printf("\n");
+			printf("\n");
 		}
 	}
 }
 void PlayerMove(char board[MOC][NOC], int mc, int nc)
 {
-	int x=0;
+	int x = 0;
 	int y = 0;
 	printf("玩家走:>\n");
 
@@ -63,7 +63,7 @@ void PlayerMove(char board[MOC][NOC], int mc, int nc)
 		else
 			printf("坐标非法,请重新输入\n");
 	}
- }
+}
 void ComputerMover(char board[MOC][NOC], int mc, int nc)
 {
 	printf("电脑走:>\n");

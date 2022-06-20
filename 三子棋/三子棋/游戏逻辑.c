@@ -11,7 +11,7 @@ void game()
 	//存储数据
 	char board[MOC][NOC];
 	//初始化数据
-	InitBoard (board,MOC,NOC);
+	InitBoard(board, MOC, NOC);
 	//打印数据
 	Displayboard(board, MOC, NOC);
 	while (1)
@@ -31,18 +31,18 @@ int main()
 		menu();
 		printf("请输入>:");
 		scanf("%d", &imput);
-		switch(imput)
+		switch (imput)
 		{
 		case 1:
 			game();
-				break;
+			break;
 		case 0:
-				printf("退出游戏\n");
-				break;
+			printf("退出游戏\n");
+			break;
 		default:
-				printf("选择错误,请重试\n");
-				break;
+			printf("选择错误,请重试\n");
+			break;
 		}
 	} while (imput);
-		return 0;
+	return 0;
 }
