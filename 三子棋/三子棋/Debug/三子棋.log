@@ -1,0 +1,7 @@
+﻿  游戏代码的实现.c
+H:\code-practice\三子棋\三子棋\游戏代码的实现.c(72,15): warning C4013: “rand”未定义；假设外部返回 int
+  游戏测试的逻辑.c
+H:\code-practice\三子棋\三子棋\游戏测试的逻辑.c(28,7): warning C4013: “srand”未定义；假设外部返回 int
+  正在生成代码...
+游戏测试的逻辑.obj : error LNK2019: 无法解析的外部符号 _ComputerMove，函数 _game 中引用了该符号
+H:\code-practice\三子棋\Debug\三子棋.exe : fatal error LNK1120: 1 个无法解析的外部命令
