@@ -1,0 +1,120 @@
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int arr1[10] = { 0 };
+//	int arr2[10] = { 0 };
+//	int a = 0;
+//	for (a = 0; a < 10; a++)
+//	{
+//		printf("请输入数字\n");
+//		scanf("%d", &arr1);
+//	}
+//	for (a = 0; a < 10; a++)
+//	{
+//		printf("请输入数字\n");
+//		scanf("%d", &arr2);
+//	}
+//	for (a = 0; a < 10; a++)
+//	{
+//		int tamp = arr1[a];
+//		arr1[a] = arr2[a];
+//		arr2[a] = tamp;
+//		printf("%d%d", arr1, arr2);
+//	}
+//	
+//	return 0
+//#include <stdio.h>
+//int man(int n)
+//{
+//	if (n == 1)
+//		return 1;
+//	else
+//		return n + man(n - 1);
+//}
+//int main()
+//{
+//	int i = 0;
+//	scanf("%d", &i);
+//	int ret = man(i);
+//	printf("%d", ret);
+//	return 0;
+//}
+//#include <stdio.h>
+//void mi(int n)
+//{
+//	if (n == 1)
+//		return 1;
+//	else
+//		 n * mi(n - 1);
+//	return n;
+//}
+//int main()
+//{
+//	int i = 0;
+//	scanf("%d", &i);
+//	 mi(i);
+//	printf("%d", mi);
+//	return 0;
+//}
+//strcpy
+//#include <stdio.h>
+//#include <string.h>
+//int main()
+//{
+//	char arr1[] = "ypu";
+//	char arr2[6];
+//	char arr3[6];
+//	strcpy(arr2, arr1);
+//	strcpy(arr3, "hello");
+//	printf("arr1: %s\narr2: %s\narr3: %s\n", arr1, arr2, arr3);
+//	return 0;
+//}
+//#include <stdio.h>
+////get_max函数的设计
+//int get_max(int x, int y)
+//{
+//	return (x > y) ? (x) : (y);
+//}
+//int main()
+//{
+//	int num1 = 10;
+//	int num2 = 20;
+//	int max = get_max(num1, num2);
+//	printf("max = %d\n", max);
+//	return 0;
+//}
+//#include <stdio.h>
+//int get_mi(int a, int b)
+//{
+//	return (a > b) ?  (a) : (b);
+//}
+//int main()
+//{
+//	int num1 = 0;
+//	int num2 = 0;
+//	scanf("%d%d", &num1, &num2);
+//	int ret = get_mi(num1,num2);
+//	printf("max=%d", ret);
+//	return 0;
+//}
+#include <stdio.h>
+void ret(int* pb, int* pd)
+{
+	int tom = 0;
+	tom = *pb;
+	*pb = *pd;
+	*pd = tom;
+
+}
+int main()
+{
+	int a = 1;
+	int b = 2;
+	
+	printf("交换前:%d %d", a, b);
+	ret(&a, &b);
+	printf("交换后:%d %d",a,b);
+	return 0;
+
+}
