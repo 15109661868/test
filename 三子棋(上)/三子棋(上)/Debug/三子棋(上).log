@@ -1,5 +1,0 @@
-﻿  游戏代码.c
-H:\code-practice\三子棋(上)\三子棋(上)\游戏代码.c(2,10): fatal error C1083: 无法打开包括文件: “游戏的声明.h”: No such file or directory
-  游戏逻辑.c
-H:\code-practice\三子棋(上)\三子棋(上)\游戏逻辑.c(2,10): fatal error C1083: 无法打开包括文件: “游戏的声明.h”: No such file or directory
-  正在生成代码...
