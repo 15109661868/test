@@ -1,5 +1,6 @@
 #pragma once
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 //棋盘的大小,符号的定义
 #define MOC 3

@@ -61,10 +61,12 @@ void PlayerMove(char board[MOC][NOC], int mc, int nc)
 			}
 		}
 		else
+		{
 			printf("坐标非法,请重新输入\n");
+		}
 	}
 }
-void ComputerMover(char board[MOC][NOC], int mc, int nc)
+void ComputerMove(char board[MOC][NOC], int mc, int nc)
 {
 	printf("电脑走:>\n");
 	while (1)

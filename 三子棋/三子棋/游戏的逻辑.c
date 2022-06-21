@@ -9,7 +9,7 @@ void menu()
 void game()
 {
 	//存储数据
-	char board[MOC][NOC];
+	char board[MOC][NOC] = {0};
 	//初始化数据
 	InitBoard(board, MOC, NOC);
 	//打印数据
@@ -19,13 +19,15 @@ void game()
 		PlayerMove(board, MOC, NOC);
 		Displayboard(board, MOC, NOC);
 		ComputerMove(board, MOC, NOC);
+		Displayboard(board, MOC, NOC);
 	}
 }
 
 int main()
 {
+	
+	srand((unsigned int)time(NULL));
 	int imput = 0;
-	srand((unsigned)time(NULL));
 	do
 	{
 		menu();

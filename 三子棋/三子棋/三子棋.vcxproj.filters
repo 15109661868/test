@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="游戏代码.c">
+    <ClCompile Include="游戏的代码.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="游戏逻辑.c">
+    <ClCompile Include="游戏的逻辑.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
