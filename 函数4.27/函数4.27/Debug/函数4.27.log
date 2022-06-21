@@ -1,0 +1,3 @@
+﻿  4.27.c
+H:\code-practice\函数4.27\函数4.27\4.27.c(55,9): warning C4477: “printf”: 格式字符串“%.1ld”需要类型“long”的参数，但可变参数 1 拥有了类型“double”
+  函数4.27.vcxproj -> H:\code-practice\函数4.27\Debug\函数4.27.exe
