@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
+#define _CRT_SECURE_NO_WARNINGS 1
 #include "游戏的声明.h"
 void InitBoard(char board[MOC][NOC], int mc, int nc)
 {
@@ -127,13 +128,13 @@ char IsWin(char board[MOC][NOC], int mc, int nc)
 		return board[1][1];
 	}
 
-//判断平局
-//如果棋盘满了就返回1，不满就返回0
+	//判断平局
+	//如果棋盘满了就返回1，不满就返回0
 
-    if (IsFull(board, mc, nc))
-    {  
-	return'Q';
-    }
-//继续
-    return 'C';
+	if (IsFull(board, mc, nc))
+	{
+		return'Q';
+	}
+	//继续
+	return 'C';
 }

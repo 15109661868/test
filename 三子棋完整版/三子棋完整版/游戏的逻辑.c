@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
+#define _CRT_SECURE_NO_WARNINGS 1
 #include "游戏的声明.h"
 void menu()
 {
@@ -10,12 +11,12 @@ void game()
 {
 	char ret = 0;
 	//存储数据
-	char board[MOC][NOC] = {0};
+	char board[MOC][NOC] = { 0 };
 	//初始化数据
 	InitBoard(board, MOC, NOC);
 	//打印数据
 	Displayboard(board, MOC, NOC);
-	
+
 	while (1)
 	{
 		PlayerMove(board, MOC, NOC);
@@ -39,7 +40,7 @@ void game()
 	{
 		printf("玩家赢了");
 	}
-	else if(ret == '#')
+	else if (ret == '#')
 	{
 		printf("电脑赢了");
 	}
@@ -52,7 +53,7 @@ void game()
 
 int main()
 {
-	
+
 	srand((unsigned int)time(NULL));
 	int imput = 0;
 	do
