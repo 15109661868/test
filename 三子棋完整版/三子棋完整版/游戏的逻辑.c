@@ -11,7 +11,7 @@ void game()
 {
 	char ret = 0;
 	//存储数据
-	char board[MOC][NOC] = { 0 };
+	char board [MOC] [NOC] = { 0 };
 	//初始化数据
 	InitBoard(board, MOC, NOC);
 	//打印数据
