@@ -1,2 +1,3 @@
 ﻿  7.11.c
-H:\code-practice\每日作业\每日作业\7.11.c(175,52): error C2106: “=”: 左操作数必须为左值
+H:\code-practice\每日作业\每日作业\7.11.c(278,6): warning C4013: “gets”未定义；假设外部返回 int
+  每日作业.vcxproj -> H:\code-practice\每日作业\Debug\每日作业.exe

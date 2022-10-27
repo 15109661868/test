@@ -177,23 +177,126 @@
 //	}
 //	return 0;
 //}
+//int main()
+//{
+//    int i = 0;
+//    for (i = 9999; i <= 99999; i++)
+//    {
+//        int a = i / 10000;
+//        int a1 = i % 10000;
+//        int b = i / 1000;
+//        int b1 = i % 1000;
+//        int c = i / 100;
+//        int c1 = i % 100;
+//        int d = i / 10;
+//        int d1 = i % 10;
+//        if ((a * a1) + (b * b1) + (c * c1) + (d * d1) == i)
+//        {
+//            printf("%d ", i);
+//        }
+//    }
+//    return 0;
+//}
+//#include <stdio.h>
+//#include <stdlib.h>
+
+//int a = 1;
+//void test()
+//{
+//	int a = 2;
+//	a += 1;
+//}
+//int main()
+//{
+//	test();
+//	printf("%d\n", a);
+//	return 0;
+//}
+//int main()
+//{
+//	int x = 1;
+//	do {
+//		printf("%2d\n", x++);
+//	} while (x--);
+//	return 0;
+//}
+//#include <stdio.h>
+//int main() {
+//    int a, b;
+//    while (scanf("%d %d", &a, &b) != EOF)
+//    {
+//        printf("%d\n", a + b);
+//    }// 注意，如果输入是多个测试用例，请通过while循环处理多个测试用例
+//
+//    return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	char c[] = "hello world";
+//	int len = 0;
+//	while (c[len++]);
+//	len--;
+//
+//	int min = 0;
+//	int max = len - 1;
+//	while (min < max)
+//	{
+//		char temp = c[min];
+//		c[min] = c[max];
+//		c[max] = temp;
+//		min++;
+//		max--;
+//	}
+//
+//	printf("%s", c);
+//	return 0;
+//}
+//————————————————
+//版权声明：本文为CSDN博主「贝尔拉梅拉热翔」的原创文章，遵循CC 4.0 BY - SA版权协议，转载请附上原文出处链接及本声明。
+//原文链接：https ://blog.csdn.net/u010771437/article/details/47977751
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+
+void reverse(char* left, char* right)
+{
+	assert(left != NULL && right != NULL);
+	while (left < right)
+	{
+		char ret = *left;
+		*left = *right;
+		*right = ret;
+		left += 1;
+		right -= 1;
+	}
+}
+
 int main()
 {
-    int i = 0;
-    for (i = 9999; i <= 99999; i++)
-    {
-        int a = i / 10000;
-        int a1 = i % 10000;
-        int b = i / 1000;
-        int b1 = i % 1000;
-        int c = i / 100;
-        int c1 = i % 100;
-        int d = i / 10;
-        int d1 = i % 10;
-        if ((a * a1) + (b * b1) + (c * c1) + (d * d1) == i)
-        {
-            printf("%d ", i);
-        }
-    }
-    return 0;
+	char arr[100] = { 0 };
+	gets(arr);
+	int len = strlen(arr);
+	char* start = arr;   //逆序每个字符串
+	char* end = start;
+	while (*end != '\0')
+	{
+		while (*end != ' ' && *end != '\0')
+		{
+			end++;
+		}
+		reverse(start, end - 1);
+		if (end == '\0')
+		{
+			start = end;
+		}
+		else
+		{
+			start = end + 1;
+		}
+		end = start;
+	}
+	reverse(arr, arr + len - 1);   //逆序整个字符串
+	printf("%s\n", arr);
+	return 0;
 }
