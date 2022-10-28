@@ -1,0 +1,4 @@
+﻿  源.c
+H:\code-practice\5.11\5.11\源.c(7,32): warning C4305: “+=”: 从“double”到“float”截断
+H:\code-practice\5.11\5.11\源.c(8,24): warning C4305: “+=”: 从“double”到“float”截断
+  5.11.vcxproj -> H:\code-practice\5.11\Debug\5.11.exe
