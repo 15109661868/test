@@ -1,0 +1,6 @@
+﻿  源.c
+H:\code-practice\Project2\Project2\源.c(140,15): warning C4013: “system”未定义；假设外部返回 int
+H:\code-practice\Project2\Project2\源.c(113,14): warning C4101: “z”: 未引用的局部变量
+H:\code-practice\Project2\Project2\源.c(113,8): warning C4101: “y”: 未引用的局部变量
+H:\code-practice\Project2\Project2\源.c(113,11): warning C4101: “x”: 未引用的局部变量
+  Project2.vcxproj -> H:\code-practice\Project2\Debug\Project2.exe
