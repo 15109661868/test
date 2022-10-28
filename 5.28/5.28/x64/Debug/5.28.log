@@ -1,0 +1,10 @@
+﻿  5.28.c
+H:\code-practice\5.28\5.28\5.28.c(22,13): warning C4047: “函数”:“int *”与“int (*)[3]”的间接级别不同
+H:\code-practice\5.28\5.28\5.28.c(22,11): warning C4024: “vernchar”: 形参和实参 1 的类型不同
+H:\code-practice\5.28\5.28\5.28.c(22,17): warning C4047: “函数”:“int *”与“int (*)[3]”的间接级别不同
+H:\code-practice\5.28\5.28\5.28.c(22,15): warning C4024: “vernchar”: 形参和实参 2 的类型不同
+H:\code-practice\5.28\5.28\5.28.c(23,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+H:\code-practice\5.28\5.28\5.28.c(23,9): warning C4313: “printf”: 格式字符串中的“%d”与“int *”类型的参数 1 冲突
+H:\code-practice\5.28\5.28\5.28.c(23,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“int *”
+H:\code-practice\5.28\5.28\5.28.c(23,9): warning C4313: “printf”: 格式字符串中的“%d”与“int *”类型的参数 2 冲突
+  5.28.vcxproj -> H:\code-practice\5.28\x64\Debug\5.28.exe
