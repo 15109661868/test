@@ -141,24 +141,153 @@
 //	return 0;
 //}
 
-#include<stdio.h>
-void Integer(int n)
-{
-	if (n >= 1 && n <= 9)
-	{
-		printf("%d", n);
-
-	}
-	else
-	{
-		printf("%d", n % 10);
-		Integer(n / 10);
-	}
-}
+//#include<stdio.h>
+//void Integer(int n)
+//{
+//	if (n >= 1 && n <= 9)
+//	{
+//		printf("%d", n);
+//
+//	}
+//	else
+//	{
+//		printf("%d", n % 10);
+//		Integer(n / 10);
+//	}
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	Integer(n);
+//	return 0;
+//}
+#include <stdio.h>
+//
+//int main()
+//{
+//	int n = 0;
+//	int a = 0;
+//	scanf("%d", &a);
+//
+//	for (n = 0; n < 4; n++)
+//	{
+//		int m = 1;
+//		for (m = 1; m < 2; m++)
+//		{
+//			if (a > 5)
+//			{
+//				printf("jajaj", a);
+//				break;
+//			}
+//			if (a < 5)
+//			{
+//				pritf("lll", a);
+//				continue;
+//			}
+//		}
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int m, n;
+//	for (m = 0; m < 5; m++)
+//	{
+//		for (n = 0; n < 4; n++)
+//		{
+//			if (n == 1)
+//			{
+//				printf("l ");
+//				continue;
+//			}
+//			else if (n == 2)
+//			{
+//				printf("2 ");
+//				//continue;
+//			}
+//			else if (n == 3)
+//			{
+//				printf("3 ");
+//				//continue;
+//			}
+//			else
+//				printf("0 ");
+//			continue;
+//			//break;
+//			//else if (n == 2)
+//			//{
+//			//	printf("2");
+//			//}
+//		}
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//    int n = 1;
+//
+//    int m = 2;
+//     switch (n)
+//  {
+//     case 1:
+//        m++;
+//     case 2:
+//         n++;
+//     case 3:
+//       switch (n)
+//        {//switch允许嵌套使用
+//           case 1:
+//              n++;
+//           case 2:
+//              m++;
+//              n++;
+//           break;
+//         }
+//     case 4:
+//        m++;
+//     break;
+//     default:
+//        break;
+//   }
+//      printf("m = %d, n = %d\n", m, n);
+//       return 0;
+//}
+#include <stdio.h>
 int main()
 {
-	int n = 0;
-	scanf("%d", &n);
-	Integer(n);
+	int i = 0;
+	for (i = 1; i <= 2; i++)
+	{
+		int m = 0;
+		for (m = 1; m < 6; m++)
+		{
+			if (m == 2)
+
+			{	//break;
+
+				printf("%d\n", m);
+				continue;
+				//break;
+			}
+			else
+				printf("1");
+		}
+	}
 	return 0;
 }
+//代码2
+//#include <stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i <= 10; i++)
+//	{
+//		if (i == 5)
+//			continue;
+//		printf("%d ", i);
+//	}
+//	return 0;
+//}
