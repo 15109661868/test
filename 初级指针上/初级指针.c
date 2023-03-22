@@ -131,17 +131,30 @@
 //	*p = 100;
 //	return 0;
 //}
+//int main()
+//{
+//	int a = 10;
+//	int* p = &a;
+//
+//	//一个指针不知道应该指向哪里的时候，暂时可以初始化为NULL;
+//	//int* p = NULL;
+//	if (p != NULL)
+//	{
+//		*p = 100;
+//	}
+//
+//	return 0;
+//}
 int main()
 {
-	int a = 10;
-	int* p = &a;
-
-	//一个指针不知道应该指向哪里的时候，暂时可以初始化为NULL;
-	//int* p = NULL;
-	if (p != NULL)
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,0 };
+	int* p = arr;
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	int i = 0;
+	for (i = 0; i < sz; i++)
 	{
-		*p = 100;
+		printf("%d ", *p);
+		++p;
 	}
-
 	return 0;
 }
