@@ -168,6 +168,80 @@
 
 //函数指针数组
 
+//int Add(int x, int y)
+//{
+//	return x + y;
+//}
+//int Sub(int x, int y)
+//{
+//	return x - y;
+//}
+//int Mul(int x, int y)
+//{
+//	return x * y;
+//}
+//int Div(int x, int y)
+//{
+//	return x / y;
+//}
+//
+////写一个计算器
+//void print()
+//{
+//	printf("************************\n");
+//	printf("****1.add  2.aub********\n");
+//	printf("****3.mul  4.div********\n");
+//	printf("****0.exit    **********\n");
+//	printf("*************************\n");
+//}
+//int main()
+//{
+//	int input = 0;
+//	int ret = 0;
+//	int x = 0;
+//	int y = 0;
+//
+//	do
+//	{
+//		print();
+//		printf("请选择>:");
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			printf("请输入两个操作数:>");
+//			scanf("%d %d", &x, &y);
+//			ret = Add(x, y);
+//			printf("%d\n", ret);
+//			break;
+//		case 2:
+//			printf("请输入两个操作数:>");
+//			scanf("%d %d", &x, &y);
+//			ret = Add(x, y);
+//			printf("%d\n", ret);
+//			break;
+//		case 3:
+//			printf("请输入两个操作数:>");
+//			scanf("%d %d", &x, &y);
+//			ret = Add(x, y);
+//			printf("%d\n", ret);
+//			break;
+//		case 4:
+//			printf("请输入两个操作数:>");
+//			scanf("%d %d", &x, &y);
+//			ret = Add(x, y);
+//			printf("%d\n", ret);
+//			break;
+//		case 0:
+//				printf("输入错误");
+//		default:
+//			break;
+//		}
+//	} while (input);
+//	return 0;
+//}
+
+
 int Add(int x, int y)
 {
 	return x + y;
@@ -184,8 +258,6 @@ int Div(int x, int y)
 {
 	return x / y;
 }
-
-//写一个计算器
 void print()
 {
 	printf("************************\n");
@@ -194,47 +266,34 @@ void print()
 	printf("****0.exit    **********\n");
 	printf("*************************\n");
 }
+
 int main()
 {
-	int input = 0;
-	int ret = 0;
 	int x = 0;
 	int y = 0;
-
+	int input = 0;
+	int re = 0;
+	int (*ps[])(int, int) = { NULL,Add,Sub,Mul,Div };
 	do
 	{
 		print();
-		printf("请选择>:");
+		printf("请输入>: ");
 		scanf("%d", &input);
-		switch (input)
+		if (input == 0)
 		{
-		case 1:
-			printf("请输入两个操作数:>");
-			scanf("%d %d", &x, &y);
-			ret = Add(x, y);
-			printf("%d\n", ret);
+			printf("退出\n");
 			break;
-		case 2:
-			printf("请输入两个操作数:>");
+		}
+		else if (input >= 1 && input <= 4)
+		{
+			printf("请输入两个数>:");
 			scanf("%d %d", &x, &y);
-			ret = Add(x, y);
-			printf("%d\n", ret);
-			break;
-		case 3:
-			printf("请输入两个操作数:>");
-			scanf("%d %d", &x, &y);
-			ret = Add(x, y);
-			printf("%d\n", ret);
-			break;
-		case 4:
-			printf("请输入两个操作数:>");
-			scanf("%d %d", &x, &y);
-			ret = Add(x, y);
-			printf("%d\n", ret);
-			break;
-		case 0:
-				printf("输入错误");
-		default:
+			re = ps[input](x, y);
+			printf("%d\n", re);
+		}
+		else
+		{
+			printf("输入错误\n");
 			break;
 		}
 	} while (input);
